@@ -14,7 +14,7 @@
                 "-NoExit",
                 "-NoProfile",
                 "-Command",
-                "Import-Module ${workspaceFolder}/bin/Debug/netstandard2.1/StrInt.dll -Force",
+                "Import-Module ${workspaceFolder}/bin/Debug/netstandard2.0/StrInt.dll -Force",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

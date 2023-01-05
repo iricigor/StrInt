@@ -75,7 +75,8 @@ namespace StrInt
             }
 
             // Convert the result array to a string and remove any leading zeros
-            return new string(Array.ConvertAll(result, x => (char)(x + '0'))).TrimStart('0');
+            string returnValue = new string(Array.ConvertAll(result, x => (char)(x + '0'))).TrimStart('0');
+            return returnValue == "" ? "0" : returnValue;
         }
     }
 }

@@ -5,7 +5,7 @@ PowerShell module `StrInt` is a demo module created to showcase how to create PS
 
 ## Module commands
 
-This module is created for learning purposes just, but it's sub goal is to enable mathematical operations over integers represented by strings.
+This module is created just for learning purposes, but it's sub goal is to enable mathematical operations over integers represented by strings.
 
 It has following three cmdlets:
 - `Get-StrIntSum` - returns sum of given numbers
@@ -14,12 +14,21 @@ It has following three cmdlets:
 
 ## Getting started
 
-TODO:
+### From PS Gallery
+
+### From GitHub
 
 ```
-git clone . . .
-Import-Module . . .
+git clone https://github.com/iricigor/StrInt
+cd StrInt
+dotnet build
+Import-Module ${workspaceFolder}/bin/Debug/netstandard2.0/StrInt.dll -Force"
 ```
+
+## A.I.
+
+🧠 Fun fact: All programming logic (helper.cs, Pester tests) in this module is created by ChatGPT!
+Read more about it [here](https://openai.com/blog/chatgpt/) or [try it yourself](https://chat.openai.com/)!
 
 ## Initial project creation
 

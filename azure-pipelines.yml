@@ -19,4 +19,4 @@ steps:
     script: |
       Install-Module Pester
       Import-Module ./bin/Debug/netstandard2.0/StrInt.dll
-      Invoke-Pester
+      Invoke-Pester -Output Detailed

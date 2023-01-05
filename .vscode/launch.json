@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "PowerShell cmdlets: pwsh",
+            "name": "PowerShell build and import",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -14,7 +14,7 @@
                 "-NoExit",
                 "-NoProfile",
                 "-Command",
-                "Import-Module ${workspaceFolder}/bin/Debug/netstandard2.0/StrInt.dll -Force",
+                "Import-Module ${workspaceFolder}/bin/Debug/netstandard2.1/StrInt.dll -Force",
             ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

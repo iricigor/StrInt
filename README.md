@@ -3,6 +3,8 @@
 
 PowerShell module `StrInt` is a demo module created to showcase how to create PS cmdlets (pronounced command-lets) in C# language.
 
+[![Build Status](https://dev.azure.com/iiric/PS1/_apis/build/status/iricigor.StrInt?branchName=master)](https://dev.azure.com/iiric/PS1/_build/latest?definitionId=49&branchName=master)
+
 ## Module commands
 
 This module is created just for learning purposes, but it's sub goal is to enable mathematical operations over integers represented by strings.
@@ -22,12 +24,12 @@ It has following three cmdlets:
 git clone https://github.com/iricigor/StrInt
 cd StrInt
 dotnet build
-Import-Module ${workspaceFolder}/bin/Debug/netstandard2.0/StrInt.dll -Force"
+Import-Module ./bin/Debug/netstandard2.0/StrInt.dll -Force
 ```
 
 ## A.I.
 
-🧠 Fun fact: All programming logic (helper.cs, Pester tests) in this module is created by ChatGPT!
+🧠 Fun fact: All programming logic in this module (helper.cs, Pester tests) is created by **ChatGPT!**
 Read more about it [here](https://openai.com/blog/chatgpt/) or [try it yourself](https://chat.openai.com/)!
 
 ## Initial project creation

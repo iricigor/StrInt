@@ -17,6 +17,15 @@ Describe "Get-StrIntFibonacci" {
     It "calculates the correct Fibonacci number for input 200" {
         Get-StrIntFibonacci "200" | Should -Be "280571172992510140037611932413038677189525"
     }
+    It 'converts normal integer to string' {
+        Get-StrIntFibonacci 5 | Should -Be "5"
+    }
+    It 'Accepts multiple inputs' {
+        Get-StrIntFibonacci 5, 10 | Should -Be "5", "55"
+    }
+    It 'Accepts mixed types as input' {
+        Get-StrIntFibonacci 3, "10" | Should -Be "2", "55"
+    }
 }
 
 Describe "Get-StrIntFibonacci Invalid Values" {

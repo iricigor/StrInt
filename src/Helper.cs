@@ -78,5 +78,35 @@ namespace StrInt
             string returnValue = new string(Array.ConvertAll(result, x => (char)(x + '0'))).TrimStart('0');
             return returnValue == "" ? "0" : returnValue;
         }
+
+        public static string Fibonacci(string n)
+        {
+            // Check if the input string is "0" or "1"
+            if (n == "0" || n == "1")
+            {
+                return n;
+            }
+
+            // Initialize variables for the previous two Fibonacci numbers and the current index
+            string prevPrev = "0";
+            string prev = "1";
+            string current = "";
+            string i = "1";
+
+            // Loop until the current index is greater than the input value
+            while (i.CompareTo(n) != 0)
+            {
+                // Calculate the current Fibonacci number using the AddTwoNumbers method
+                current = AddTwoNumbers(prevPrev, prev);
+
+                // Update the previous two Fibonacci numbers and the current index
+                prevPrev = prev;
+                prev = current;
+                i = AddTwoNumbers(i, "1");
+            }
+
+            return current;
+        }
+
     }
 }

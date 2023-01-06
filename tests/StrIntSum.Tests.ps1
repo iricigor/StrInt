@@ -61,7 +61,7 @@ Describe "Get-StrIntSum Normal Numbers" {
         }
 
         It "throws an error when an integer is negative" {
-            { "1", "-1" | Get-StrIntSum } | Should -Throw
+            { "1", "-1" | Get-StrIntSum -ea Stop } | Should -Throw
         }
     }
 }

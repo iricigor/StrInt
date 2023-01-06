@@ -11,7 +11,7 @@ namespace StrInt
             Position = 0,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true),
-            ValidatePattern("\\d+")]
+            ValidatePattern("^\\d+$")]
         public string[] Number { get; set; }
         private string _result = "0";
 

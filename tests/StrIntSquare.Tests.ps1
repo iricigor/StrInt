@@ -19,6 +19,10 @@ Describe "Get-StrIntSquare Normal Numbers" {
         Get-StrIntSquare "10" | Should -Be "100"
     }
 
+    It "returns the correct square for 14651 (result contains 14651 in the middle)" {
+        Get-StrIntSquare "14651" | Should -Be "214651801"
+    }
+
     It "returns the correct square for large integer" {
         Get-StrIntSquare "12345678901234567890" | Should -Be "152415787532388367501905199875019052100"
     }

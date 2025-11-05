@@ -15,6 +15,7 @@ It has following cmdlets:
 - `Get-StrIntFibonacci` - returns n-th Fibonacci number
 - `Get-StrIntSquare` - returns square of given numbers
 - `Get-StrIntFactorial` - returns factorial (n!) of given numbers
+- `Get-StrIntPalindromic` - determines if a number reads the same forwards and backwards
 
 ## Getting started
 

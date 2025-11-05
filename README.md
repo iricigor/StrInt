@@ -9,10 +9,12 @@ PowerShell module `StrInt` is a demo module created to showcase how to create PS
 
 This module is created just for learning purposes, but it's sub goal is to enable mathematical operations over integers represented by strings.
 
-It has following three cmdlets:
+It has following cmdlets:
 - `Get-StrIntSum` - returns sum of given numbers
 - `Get-StrIntProduct` - returns product (multiplication) of given numbers
 - `Get-StrIntFibonacci` - returns n-th Fibonacci number
+- `Get-StrIntSquare` - returns square of given numbers
+- `Get-StrIntFactorial` - returns factorial (n!) of given numbers
 
 ## Getting started
 

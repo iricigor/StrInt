@@ -35,6 +35,19 @@ Describe "Get-StrIntFactorial Normal Numbers" {
         Get-StrIntFactorial "20" | Should -Be "2432902008176640000"
     }
 
+    # Each of these factorials has exactly as many digits as the input number
+    It "returns correct factorial for 22 (result has exactly 22 digits)" {
+        Get-StrIntFactorial "22" | Should -Be "1124000727777607680000"
+    }
+
+    It "returns correct factorial for 23 (result has exactly 23 digits)" {
+        Get-StrIntFactorial "23" | Should -Be "25852016738884976640000"
+    }
+
+    It "returns correct factorial for 24 (result has exactly 24 digits)" {
+        Get-StrIntFactorial "24" | Should -Be "620448401733239439360000"
+    }
+
     It "returns correct factorial for large number 50" {
         Get-StrIntFactorial "50" | Should -Be "30414093201713378043612608166064768844377641568960512000000000000"
     }

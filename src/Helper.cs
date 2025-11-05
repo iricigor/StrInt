@@ -181,6 +181,7 @@ namespace StrInt
             string i = "0";
 
             // Loop from 0 to exponent-1, multiplying result by num each time
+            // Continue while i != exponent
             while (i != exponent)
             {
                 result = MultiplyTwoNumbers(result, num);

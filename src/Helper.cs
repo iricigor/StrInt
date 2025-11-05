@@ -157,5 +157,38 @@ namespace StrInt
             return true;
         }
 
+        public static string CubeNumber(string num)
+        {
+            // Calculate the cube of a number by multiplying it by itself twice (num * num * num)
+            string square = MultiplyTwoNumbers(num, num);
+            return MultiplyTwoNumbers(square, num);
+        }
+
+        public static string Power(string num, string exponent)
+        {
+            // Handle edge cases
+            if (exponent == "0")
+            {
+                return "1";
+            }
+            if (exponent == "1")
+            {
+                return num;
+            }
+
+            // Initialize result to 1
+            string result = "1";
+            string i = "0";
+
+            // Loop from 0 to exponent-1, multiplying result by num each time
+            while (i != exponent)
+            {
+                result = MultiplyTwoNumbers(result, num);
+                i = AddTwoNumbers(i, "1");
+            }
+
+            return result;
+        }
+
     }
 }

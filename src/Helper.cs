@@ -114,5 +114,29 @@ namespace StrInt
             return MultiplyTwoNumbers(num, num);
         }
 
+        public static string Factorial(string n)
+        {
+            // Factorial of 0 is 1
+            if (n == "0")
+            {
+                return "1";
+            }
+
+            // Initialize result to 1
+            string result = "1";
+            string i = "1";
+
+            // Loop from 1 to n, multiplying result by each number
+            // Continue while i != n+1 (or until we reach n+1)
+            string nPlusOne = AddTwoNumbers(n, "1");
+            while (i != nPlusOne)
+            {
+                result = MultiplyTwoNumbers(result, i);
+                i = AddTwoNumbers(i, "1");
+            }
+
+            return result;
+        }
+
     }
 }

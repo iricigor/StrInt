@@ -108,5 +108,11 @@ namespace StrInt
             return current;
         }
 
+        public static string SquareNumber(string num)
+        {
+            // Calculate the square of a number by multiplying it by itself
+            return MultiplyTwoNumbers(num, num);
+        }
+
     }
 }
